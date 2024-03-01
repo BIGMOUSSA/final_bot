@@ -1,0 +1,60 @@
+version: "3.1"
+
+rules:
+#- rule: Répondre à un salut
+#  steps:
+#  - intent: chitchat/ask_salutation
+#  - action: utter_chitchat/ask_salutation
+
+#- rule: Répondre à une demande de remerciement
+#  steps:
+#  - intent: chitchat/ask_remerciement
+#  - action: utter_chitchat/ask_remerciement
+
+#- rule: Répondre à une question hors sujet
+#  steps:
+#  - intent: chitchat/ask_out_of_scope
+#  - action: utter_chitchat/ask_out_of_scope
+
+- rule: Répondre à une demande d'aide générale
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+
+- rule: Répondre faq4
+  steps:
+  - intent: faq4
+  - action: utter_faq4
+
+- rule: Répondre faq1
+  steps:
+  - intent: faq1
+  - action: utter_faq1
+
+- rule: Répondre faq2
+  steps:
+  - intent: faq2
+  - action: utter_faq2
+
+- rule: repond to faq
+  steps:
+  - intent: faq
+  - action: utter_faq
+
+- rule: Répondre à faq3
+  steps:
+  - intent: faq3
+  - action: utter_faq3
+
+- rule: Execute action_nlg when user want more details about publications
+  steps:
+    - intent: NLG
+    - action: action_nlg
+
+- rule: reformulation
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_fallback
+
+
+# D'autres règles peuvent être ajoutées ici pour gérer d'autres interactions utilisateur-bot

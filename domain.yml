@@ -1,0 +1,210 @@
+version : '3.1'
+
+ 
+
+intents:
+- NLG
+- chitchat
+- faq
+- faq1
+- faq2
+- faq3
+- faq4
+
+ 
+
+responses:
+ utter_chitchat/ask_salutation :
+ - text: "Salut! Comment puis-je vous aider \n je peux vous aider à retrouver une publication ou rapport\n je répond aussi aux questionx sur le contenu des publications"
+ - text: "Comment vous allez ? \n je peux vous aider à retrouver une publication ou rapport\n je répond aussi aux questions sur le contenu des publications"
+ - text: "Ravi de vous servir !\n je peux vous aider à retrouver une publication ou rapport\n je répond aussi aux questions sur le contenu des publications"
+
+
+ utter_faq1/SynthèseEconomique :
+ - text: "Ce que vous cherchez ( SynthèseEconomique ) semble se trouver dans cette [page](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=24)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=24) vous ménera vers cette publication concernant ' SynthèseEconomique '"
+ - text: "pour les indicateurs concernant SynthèseEconomique veuillez suivre ce [lien](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=24)"
+ - text: "Merci de se rendre dans la rubrique : [SynthèseEconomique](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=24)"
+ - text: "Pour les indicateurs relatives à 'SynthèseEconomique', suivre ce [page](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=24)."
+
+
+ utter_faq2/POPULATION :
+ - text: "Ce que vous cherchez ( POPULATION ) semble se trouver dans cette [page](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=25)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=25) vous ménera vers cette publication concernant ' POPULATION '"
+ - text: "pour les indicateurs concernant POPULATION veuillez suivre ce [lien](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=25)"
+ - text: "Merci de se rendre dans la rubrique : [POPULATION](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=25)"
+ - text: "Pour les indicateurs relatives à 'POPULATION', suivre ce [page](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=25)."
+
+
+ utter_faq2/NATALITE :
+ - text: "Ce que vous cherchez ( NATALITE ) semble se trouver dans cette [page](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=26)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=26) vous ménera vers cette publication concernant ' NATALITE '"
+ - text: "pour les indicateurs concernant NATALITE veuillez suivre ce [lien]()"
+ - text: "Merci de se rendre dans la rubrique : [NATALITE](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=26)"
+ - text: "Pour les indicateurs relatives à 'NATALITE', suivre ce [page](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=26)."
+
+
+ utter_chitchat/ask_bot :
+ - text: Appel moi stat_bot, je suis votre assistant 
+ - text: Je suis programmé pour vous aider 
+
+
+ utter_chitchat/ask_out_of_scope :
+ - text: Désolé ceci n'est pas pris en compte dans cette application
+ - text: Ma mission se limite à vous fournir les informations statistiques produites par le système statistique national
+ - text: Désolé je ne peux pas répondre à cette question!
+ - text: Je ne couvre pas ces genres questions, désolé!
+
+
+ utter_faq4/attestation :
+ - text: "Si vous avez particpé au RGPH5 en tant que recenseur ou contrôleur, votre attestion devrait être téléchargeable sur ce [lien](https://recrutergph5.ansd.sn/),  \n si vous êtes superviseurs, veuillez contacter le CTD, CTR ou chef de service régional pour s'enquérir de la situation. \n Si vous avez participé à une autre enquête merci de se rapprocher au ressource humaines ou le service régional le plus proche."
+
+
+ utter_faq4/Localisation :
+ - text: " L'ANSD se trouve à Rocade Fann Bel-air Cerf-volant BP 116 Dakar"
+ - text: " Rocade Fann Bel-air Cerf-volant BP 116 Dakar Rocade Fan Bel AIR '"
+
+
+ utter_faq3/EnquêtesEtude :
+ - text: "Ce que vous cherchez ( EnquêtesEtude ) semble se trouver dans cette [page](https://www.ansd.sn/enquete)"
+ - text: "Ce [lien](https://www.ansd.sn/enquete) vous ménera vers cette publication concernant ' EnquêtesEtude '"
+ - text: "pour les indicateurs concernant EnquêtesEtude veuillez suivre ce [lien](https://www.ansd.sn/enquete)"
+ - text: "Merci de se rendre dans la rubrique : [EnquêtesEtude](https://www.ansd.sn/enquete)"
+ - text: "Pour les indicateurs relatives à 'EnquêtesEtude', suivre ce [page](https://www.ansd.sn/enquete)."
+
+
+ utter_faq4/rgph :
+ - text: "Les données pré-éliminaire du recensement de 2023 sont disponible sur ce [site](https://resultats.ansd.sn/)"
+ - text: "Pour consulter les données publiées concernant le recensement de 2023, cliquez [ici](https://resultats.ansd.sn/)"
+
+
+ utter_faq1/statistiquesEntreprises :
+ - text: "Ce que vous cherchez ( statistiquesEntreprises ) semble se trouver dans cette [page](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=23)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=23) vous ménera vers cette publication concernant ' statistiquesEntreprises '"
+ - text: "pour les indicateurs concernant statistiquesEntreprises veuillez suivre ce [lien](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=23)"
+ - text: "Merci de se rendre dans la rubrique : [statistiquesEntreprises](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=23)"
+ - text: "Pour les indicateurs relatives à 'statistiquesEntreprises', suivre ce [page](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=23)."
+
+
+ utter_faq4/AproposANSD :
+ - text: "Pour avoir les informations sur l'histoire de l'ANSD, la liste des Directions, l'organigramme etc. merci de rendre [ici](https://www.ansd.sn/propos/lansd/presentation-generale)"
+
+
+ utter_faq/Emploi :
+ - text: "Ce que vous cherchez ( Emploi ) semble se trouver dans cette [page](https://www.ansd.sn/theme/societe?field_type_indicateurs_target_id=31)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/societe?field_type_indicateurs_target_id=31) vous ménera vers cette publication concernant ' Emploi '"
+ - text: "pour les indicateurs concernant Emploi veuillez suivre ce [lien](https://www.ansd.sn/theme/societe?field_type_indicateurs_target_id=31)"
+ - text: "Merci de se rendre dans la rubrique : [Emploi](https://www.ansd.sn/theme/societe?field_type_indicateurs_target_id=31)"
+ - text: "Pour les indicateurs relatives à 'Emploi', suivre ce [page](https://www.ansd.sn/theme/societe?field_type_indicateurs_target_id=31)."
+
+
+ utter_faq4/Recrutement :
+ - text: "le recrutements se fait via le platform https://recrute.ansd.sn"
+ - text: "Pour travailler à l'ANSD veuillez postuler sur https://recrute.ansd.sn"
+ - text: "L'ANSD recrute diverse profils, rendez-vous sur ce lien https://recrute.ansd.sn"
+
+
+ utter_faq1/PRIX :
+ - text: "Ce que vous cherchez ( PRIX ) semble se trouver dans cette [page](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=21)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=21) vous ménera vers cette publication concernant ' PRIX '"
+ - text: "pour les indicateurs concernant PRIX veuillez suivre ce [lien](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=21)"
+ - text: "Merci de se rendre dans la rubrique : [PRIX](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=21)"
+ - text: "Pour les indicateurs relatives à 'PRIX', suivre ce [page](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=21)."
+
+
+ utter_faq/société :
+ - text: "Ce que vous cherchez ( société ) semble se trouver dans cette [page](https://www.ansd.sn/theme/societe)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/societe) vous ménera vers cette publication concernant ' société '"
+ - text: "pour les indicateurs concernant société veuillez suivre ce [lien](https://www.ansd.sn/theme/societe)"
+ - text: "Merci de se rendre dans la rubrique : [société](https://www.ansd.sn/theme/societe)"
+ - text: "Pour les indicateurs relatives à 'société', suivre ce [page](https://www.ansd.sn/theme/societe)."
+
+
+ utter_faq2/MORTALITE :
+ - text: "Ce que vous cherchez ( MORTALITE ) semble se trouver dans cette [page](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=28)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=28) vous ménera vers cette publication concernant ' MORTALITE '"
+ - text: "pour les indicateurs concernant MORTALITE veuillez suivre ce [lien](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=28)"
+ - text: "Merci de se rendre dans la rubrique : [MORTALITE](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=28)"
+ - text: "Pour les indicateurs relatives à 'MORTALITE', suivre ce [page](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=28)."
+
+
+ utter_chitchat/ask_AuRevoir :
+ - text: Bye
+ - text: A la prochaine !
+ - text: Ravi de vous servir 
+
+
+ utter_faq2/MIGRATION :
+ - text: "Ce que vous cherchez ( MIGRATION ) semble se trouver dans cette [page](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=30)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=30) vous ménera vers cette publication concernant ' MIGRATION '"
+ - text: "pour les indicateurs concernant MIGRATION veuillez suivre ce [lien](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=30)"
+ - text: "Merci de se rendre dans la rubrique : [MIGRATION](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=30)"
+ - text: "Pour les indicateurs relatives à 'MIGRATION', suivre ce [page](https://www.ansd.sn/theme/demographie?field_type_indicateurs_target_id=30)."
+
+
+ utter_faq4/LienSiteWeb :
+ - text: "voic le lien www.ansd.sn"
+ - text: "le site officiel de l'ANSD est www.ansd.sn"
+
+
+ utter_faq3/ses_nationale :
+ - text: "Ce que vous cherchez ( ses_nationale ) semble se trouver dans cette [page](https://www.ansd.sn/ses-nationales)"
+ - text: "Ce [lien](https://www.ansd.sn/ses-nationales) vous ménera vers cette publication concernant ' ses_nationale '"
+ - text: "pour les indicateurs concernant ses_nationale veuillez suivre ce [lien](https://www.ansd.sn/ses-nationales)"
+ - text: "Merci de se rendre dans la rubrique : [ses_nationale](https://www.ansd.sn/ses-nationales)"
+ - text: "Pour les indicateurs relatives à 'ses_nationale', suivre ce [page](https://www.ansd.sn/ses-nationales)."
+
+
+ utter_faq1/EchangeEXTERIEUR :
+ - text: "Ce que vous cherchez ( EchangeEXTERIEUR ) semble se trouver dans cette [page](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=22)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=22) vous ménera vers cette publication concernant ' EchangeEXTERIEUR '"
+ - text: "pour les indicateurs concernant EchangeEXTERIEUR veuillez suivre ce [lien](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=22)"
+ - text: "Merci de se rendre dans la rubrique : [EchangeEXTERIEUR](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=22)"
+ - text: "Pour les indicateurs relatives à 'EchangeEXTERIEUR', suivre ce [page](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=22)."
+
+
+ utter_faq3/ses_regionale :
+ - text: "Ce que vous cherchez ( ses_regionale ) semble se trouver dans cette [page](https://www.ansd.sn/ses-regionales)"
+ - text: "Ce [lien](https://www.ansd.sn/ses-regionales) vous ménera vers cette publication concernant ' ses_regionale '"
+ - text: "pour les indicateurs concernant ses_regionale veuillez suivre ce [lien](https://www.ansd.sn/ses-regionales)"
+ - text: "Merci de se rendre dans la rubrique : [ses_regionale](https://www.ansd.sn/ses-regionales)"
+ - text: "Pour les indicateurs relatives à 'ses_regionale', suivre ce [page](https://www.ansd.sn/ses-regionales)."
+
+
+ utter_faq1/CroissanceEconomique :
+ - text: "Ce que vous cherchez ( CroissanceEconomique ) semble se trouver dans cette [page](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=20)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=20) vous ménera vers cette publication concernant ' CroissanceEconomique '"
+ - text: "pour les indicateurs concernant CroissanceEconomique veuillez suivre ce [lien](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=20)"
+ - text: "Merci de se rendre dans la rubrique : [CroissanceEconomique](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=20)"
+ - text: "Pour les indicateurs relatives à 'CroissanceEconomique', suivre ce [page](https://www.ansd.sn/theme/economie?field_type_indicateurs_target_id=20)."
+
+
+ utter_faq3/Agriculture :
+ - text: "Ce que vous cherchez ( Agriculture ) semble se trouver dans cette [page](https://www.ansd.sn/theme/autres-statistiques?field_type_indicateurs_target_id=41)"
+ - text: "Ce [lien](https://www.ansd.sn/theme/autres-statistiques?field_type_indicateurs_target_id=41) vous ménera vers cette publication concernant ' Agriculture '"
+ - text: "pour les indicateurs concernant Agriculture veuillez suivre ce [lien](https://www.ansd.sn/theme/autres-statistiques?field_type_indicateurs_target_id=41)"
+ - text: "Merci de se rendre dans la rubrique : [Agriculture](https://www.ansd.sn/theme/autres-statistiques?field_type_indicateurs_target_id=41)"
+ - text: "Pour les indicateurs relatives à 'Agriculture', suivre ce [page](https://www.ansd.sn/theme/autres-statistiques?field_type_indicateurs_target_id=41)."
+
+
+ utter_NLG:
+ - text: L'API sera disponible bientôt
+utter_default:
+ - text : Désolé, je ne comprend pas votre requête. Pourriez-vous reformuler svp!
+
+ 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+ - utter_chitchat
+ - utter_faq
+ - utter_faq1
+ - utter_faq2
+ - utter_faq3
+ - utter_faq4
+ - action_default_fallback
+ - action_nlg
+entities:
+ - région

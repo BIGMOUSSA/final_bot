@@ -1,0 +1,62 @@
+language: fr
+# MAX DEFAULT
+pipeline:
+  - name: WhitespaceTokenizer  # Sépare le texte en mots
+  - name: LanguageModelFeaturizer  # Génère des représentations vectorielles du texte à l'aide de modèles de langage
+    model_name: bert
+    model_weights: "rasa/LaBSE"  # Utilisation du modèle LaBSE pour la représentation des mots
+  - name: "DIETClassifier"  # Utilisation de DIET (Dual Intent and Entity Transformer) pour la classification des intents et des entités
+    epochs: 1000  # Nombre d'itérations pour l'apprentissage
+    #learning_rate: 0.001  # Taux d'apprentissage
+  - name: "RegexFeaturizer"
+    # Text will be processed with case sensitive as default
+    case_sensitive: True
+    # use match word boundaries for lookup table
+    use_word_boundaries: True
+  - name: EntitySynonymMapper  # Cartographie les synonymes des entités pour une meilleure reconnaissance
+  - name: ResponseSelector  # Sélectionne les réponses prédéfinies basées sur des intents de type FAQ
+    #epochs: 100  # Nombre d'itérations pour l'apprentissage
+    retrieval_intent: faq  # Intent utilisé pour récupérer les réponses de FAQ
+
+# Ajout de ResponseSelectors et EntitySynonymMappers pour chaque type de FAQ spécifique
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    #epochs: 100
+    retrieval_intent: faq1  # Intent spécifique pour FAQ1
+
+  - name: ResponseSelector
+    #epochs: 100
+    retrieval_intent: faq2  # Intent spécifique pour FAQ2
+ 
+  - name: ResponseSelector
+    #epochs: 100
+    retrieval_intent: faq3  # Intent spécifique pour FAQ3
+  
+  - name: ResponseSelector
+    #epochs: 100
+    retrieval_intent: faq4  # Intent spécifique pour FAQ4
+
+  # Répéter EntitySynonymMapper pour le traitement des synonymes des entités dans les chitchats
+  - name: ResponseSelector  # Réponse aux chitchats
+    #epochs: 100
+    retrieval_intent: chitchat
+
+  - name: FallbackClassifier  # Classifier de secours pour les cas où l'intention de l'utilisateur n'est pas claire
+    threshold: 0.7  # Seuil de confiance pour déterminer si une intention est prévue par le modèle
+    ambiguity_threshold: 0.1  # Seuil de confusion pour gérer les cas où plusieurs intents sont détectés avec une similarité élevée
+
+policies:
+  - name: MemoizationPolicy  # Politique pour mémoriser les dialogues précédents
+  - name: RulePolicy  # Politique basée sur des règles prédéfinies pour les actions du bot
+    core_fallback_threshold: 0.7  # Seuil de confiance pour activer le core fallback
+    core_fallback_action_name: "action_default_fallback"  # Action par défaut à prendre en cas de core fallback
+    enable_fallback_prediction: True  # Activation de la prédiction de fallback
+  - name: UnexpecTEDIntentPolicy  # Politique pour gérer les intents inattendus
+    #max_history: 6  # Nombre maximal de tours de dialogue à considérer pour la prédiction
+    #epochs: 100  # Nombre d'itérations pour l'apprentissage
+  - name: TEDPolicy  # Utilisation de Transformer Embedding Dialogue (TED) pour la prédiction des actions
+    #max_history: 6  # Nombre maximal de tours de dialogue à considérer pour la prédiction
+    #epochs: 100  # Nombre d'itérations pour l'apprentissage
+    #constrain_similarities: true  # Contraintes pour les similarités entre les actions prédites
+
+assistant_id: 20240109-121537-express-pod  # Identifiant de l'assistant, peut être utilisé pour référence

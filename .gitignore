@@ -1,0 +1,44 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+
+# Dependency directories
+node_modules/
+models/
+
+# Logs and temporary files
+logs/
+*.log
+*.tar.gz
+*.tar
+
+# Rasa generated files
+results/
+tests/
+nlu_model_config.yml
+core_model_config.yml
+project.yml
+rasa.db
+rasa-x/
+
+# Exclude .pkl files
+*.pkl
+
+# IDE files
+.idea/
+
+# Editor-specific files
+*.swp
+*~
+
+# Compiled files
+*.pyc
+.rasa/
+results
+.db

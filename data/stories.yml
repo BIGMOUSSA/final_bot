@@ -1,0 +1,91 @@
+stories:
+- story: cherche à télécharger une economie
+  steps:
+  - user: |
+      bonjour
+    intent: chitchat
+  - action: utter_chitchat
+  - user: |
+      je voudrais consulter le dernier rapport sur l'indice du chiffre d'affaires
+    intent: faq1
+  - action: utter_faq1
+  - user: |
+      super 
+    intent: chitchat
+  - action: utter_chitchat
+
+- story: cherche à télécharger une publication démographie
+  steps:
+  - user: |
+      bonjour
+    intent: chitchat
+  - action: utter_chitchat
+  - user: |
+      Où trouver les informations sur la natalité par région
+    intent: faq2
+  - action: utter_faq2
+  - user: |
+      merci de votre aide 
+    intent: chitchat
+  - action: utter_chitchat
+
+- story: cherche à télécharger une publication societé
+  steps:
+  - user: |
+      bonjour
+    intent: chitchat
+  - action: utter_chitchat
+  - user: |
+      je veux consulter les données sur le taux de chômage
+    intent: faq
+  - action: utter_faq
+  - user: |
+      good job 
+    intent: chitchat
+  - action: utter_chitchat
+
+- story: cherche à télécharger une publication autres statistique
+  steps:
+  - user: |
+      bonjour
+    intent: chitchat
+  - action: utter_chitchat
+  - user: |
+      je souhaite avoir les données sur la production agricole
+    intent: faq3
+  - action: utter_faq3
+  - user: |
+      bye 
+    intent: chitchat
+  - action: utter_chitchat
+
+- story: cherche autres
+  steps:
+  - user: |
+      bonjour
+    intent: chitchat
+  - action: utter_chitchat
+  - user: |
+      Je veux mon attestation de l'enquête EDS
+    intent: faq4
+  - action: utter_faq4
+  - user: |
+      MERCI 
+    intent: chitchat
+  - action: utter_chitchat
+
+
+- story: parle moi de la situation économique du pays
+  steps:
+  - user: |
+      salut
+    intent: chitchat
+  - action: utter_chitchat
+  - user: |
+      parle moi de la situation économique du pays
+    intent: NLG
+  - action: action_nlg
+  - user: |
+      merci de votre aide, à plus
+    intent: chitchat
+  - action : utter_chitchat
