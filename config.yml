@@ -6,7 +6,7 @@ pipeline:
     model_name: bert
     model_weights: "rasa/LaBSE"  # Utilisation du modèle LaBSE pour la représentation des mots
   - name: "DIETClassifier"  # Utilisation de DIET (Dual Intent and Entity Transformer) pour la classification des intents et des entités
-    epochs: 1000  # Nombre d'itérations pour l'apprentissage
+    epochs: 800  # Nombre d'itérations pour l'apprentissage
     #learning_rate: 0.001  # Taux d'apprentissage
   - name: "RegexFeaturizer"
     # Text will be processed with case sensitive as default
